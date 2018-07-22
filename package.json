@@ -28,11 +28,8 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/walleyjs/newBlog.git"
+    "url": ""
   },
-  "bugs": {
-    "url": "https://github.com/walleyjs/newBlog/issues"
-  },
-  "homepage": "https://github.com/walleyjs/newBlog#readme",
-  "description": "\"# newBlog\" \r \"# newBlog\""
+  "homepage": "",
+  "description": "\"# newBlog\" \r \"# newBlog\" \r \"# newBlog\""
 }
