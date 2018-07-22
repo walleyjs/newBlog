@@ -1,0 +1,32 @@
+<% include ../partials/header.ejs %>
+<ul id="mainIndexcont">
+<div class="showads">
+</div> 
+<li class="indexcontainer">
+    <%talks.forEach(function(talk){%>
+        <a href="/talk/<%=talk._id%>" id="indexanc">
+            <ul id="indexCont" id="indexanc">
+                <li class="indexcontent indexcontent1">
+                    <h2><%=talk.topic%></h2>
+                    <%=talk.date.toDateString()%>
+                </li>
+                <li class="indexcontent indexcontent2">
+                    post:<%=talk.post.substring(0,150).toLowerCase()%>...
+                </li>
+                <%if((/\.(mp4|)$/i).test(talk.url)){%>
+                    <li class="indexcontent indexcontent3">
+                        <video width="270" height="155px" id="video" controls>
+                        <source src="<%=talk.url%>" type="video/mp4">        
+                        </video>
+                    </li>
+                <%}else{%>    
+                    <li class="indexcontent indexcontent4">
+                        <img id="img" src="<%=talk.image_url%>" width="240px" height="140px" alt="pastor image">
+                    </li>
+                <%}%>
+             </ul>
+         </a>
+    <%})%>
+</li>
+</ul>
+<% include ../partials/footer.ejs %>

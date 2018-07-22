@@ -1,0 +1,657 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* header style============== */
+#headercont{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #009688;
+    height: 40px;
+    /* padding-top: 10px; */
+    /* flex-wrap: wrap; */
+    padding-right: 40px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    /* bottom: 20px; */
+    
+}
+.header{
+    margin-left: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    border-left:solid white thin;
+    /* border-left: 20px thin black; */
+    align-self: center;
+    flex-wrap: wrap;
+    line-height: 35px;
+    
+}
+.advert{
+    display: flex;
+}
+#indexHead {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 50px 100px 0px 100px;
+    border: solid #0000004d thin;
+    /* padding: 10px 20px 20px 20px; */
+    /* position: absolute */
+}
+/* end of============== header style */
+
+/*========== landing page======== */
+#landingcont{
+    display: flex;
+    background-size:cover;
+    width: 100%;
+    /* height: 70rem; */
+     /* height: 500rem; */
+    /* height: 500px; */
+    /* opacity:5; */
+}
+
+/* ======================================index page========================= */
+
+#mainIndexcont {
+    display: flex;
+    width: 95%;
+    margin-top: 20px;
+    padding: 0px 20px 0px 20px;
+    /* justify-content: space-around; */
+}
+ul {
+    list-style: none;
+}
+.ads{
+    width: 200px;
+    padding: 10px;
+    border: solid #0000001a thin;
+    margin: 20px 10px;
+    height: 70%;
+    
+    /* position: static; */
+    /* display: flex; */
+
+}
+
+#adsimg{
+    margin: 20px;
+    display: flex;
+    width: 60%;
+    background-size: cover;
+    height: 50px;
+
+}
+.indexcontainer{
+    width:100%;
+    border-top: solid #0000001a thick;
+
+}
+#indexanc:hover {
+    opacity:0.6;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+#indexCont{
+    display:flex;
+    flex-direction: row;
+    margin-top: 30px;
+    padding: 10px 30px 0px 20px;
+    border-top: solid #0000004d thin;
+    /* justify-content: space-around; */
+    /* width: 100%; */
+    width: 95%;
+    /* flex-wrap: wrap; */
+    /* background-color: black; */
+    
+}
+.indexcontent{
+    display:flex;
+    /* width: 250px; */
+    padding: 0px 10px;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+}
+.indexcontent1{
+    font-size: 15px;
+    
+}
+#indexCont:hover {
+    opacity: 0.6;
+}
+#indexanc .indexcontent2 {
+    display:flex;
+    font-size: 15px;
+    color: #0009;
+}
+#video{
+    background-size: cover;
+}
+#img{
+    background-size: cover;
+}
+/* ===========================show page==================== */
+#showContainer {
+    display: flex;
+    margin-top: 20px;
+    padding: 0px 0px 0px 20px;
+}
+.showads {
+    width: 40%; 
+    z-index: 30;  
+}
+.showadspot{
+    width: 40%;
+}
+.showad{
+position: fixed;
+top:50px;
+width: 27%;
+border: solid #0000001a thin;
+    padding: 5px 5px 10px 5px;
+
+
+}
+
+#showmain{
+    /* display:inline-flex; */
+    border-top: solid #0000001a thick;
+    width: 100%;
+    margin: 0px 10px 0px 0px;
+   
+}
+#showvideo{
+     /* display: flex; */
+     background-size: cover;
+     width: 100%;
+     /* position: relative; */
+}
+#showimg{
+    /* display: flex; */
+    background-size: cover;
+    width: 100%;
+   
+}
+#showaudio{
+    /*display: flex;*/
+    margin: 20px 0px 10px 60px;
+    /* width: 100%; */
+     font-size: 24px;
+     z-index: 0;
+
+}
+#longpost{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 50px 0px 60px;
+    font-size: 21px;
+    color: rgb(0, 0, 0);
+    ;
+    
+}
+#showaudio audio{
+    border-radius: 10px;
+    /* height:60px; */
+    width: 70%;
+
+}
+/*======================== forms============== */
+.formheader {
+    text-align: center;
+}
+
+#formcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+#formcont {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.input {
+    width: 400px;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 3px;
+    margin-top: 10px;
+    border-color: #9e9e9e8a;
+    border-radius: 5px;
+}
+
+.input3 {
+    background-color:#099b79fc;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+li a {
+    color: #099b79fc;
+}
+/* =======================end of forms============= */
+/*============== media queries============== */
+
+@media only screen and (max-width:1004px) {
+    #mainIndexcont {
+        display: flex;
+        /* width: 100%; */
+        margin-top: 20px;
+        padding: 0px 0px 0px 0px;
+        /* border-top: solid #0000001a thick; */
+        width: 100%;
+        /* justify-content: space-around; */
+    }
+    .indexcontainer{
+        width: 100%;
+    border-top: solid #0000001a thick;
+
+    }
+    #indexCont {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        padding: 10px 10px 0px 0px;
+        border-top: solid #0000004d thin;
+        /* justify-content: space-around; */
+        /* width: 100%; */
+        /* width: 60%; */
+        /* flex-wrap: wrap; */
+        /* background-color: black; */
+    }
+
+    .indexcontent {
+        display: flex;
+        width: 100%;
+        padding: 0px 5px;
+        /* justify-content: space-around; */
+        flex-wrap: wrap;
+    }
+    #indexanc .indexcontent2 {
+        display: flex;
+        /* font-size: 20px; */
+        color: #0009;
+    }
+    .ads{
+    width: 200px;
+    padding: 20px;
+    display:none;
+    border: solid #0000001a thin;
+    
+    /* position: static; */
+    /* display: flex; */
+
+}
+}
+@media only screen and (max-width:700px) {
+   #headercont {
+       display: flex;
+       justify-content: center;
+       background-color: #009688;
+       height: 40px;
+       /* padding-top: 10px; */
+       /* flex-wrap: wrap; */
+       padding-right: 20px;
+   }
+
+   .header {
+       margin-left: 5px;
+       padding-right: 10px;
+       padding-left: 10px;
+       text-decoration: none;
+       font-size: 15px;
+       color: white;
+       border-left: solid white thin;
+       /* border-left: 20px thin black; */
+       align-self: center;
+       flex-wrap: wrap;
+       line-height: 35px;
+   }
+   .showads {
+       display: none;
+   }
+   /* end of============== header style */
+
+   /*========== landing page======== */
+
+   #landingcont {
+       display: flex;
+       background-size: cover;
+        width: 100%;
+     height: 30rem;
+       /* opacity: 5; */
+   }
+
+   /* ======================================index page========================= */
+   #adsimg {
+       margin: 10px;
+       display: flex;
+       width: 60%;
+       background-size: cover;
+       height: 50px;
+   }
+   #mainIndexcont {
+       display: flex;
+       width: 100%;
+       margin-top: 20px;
+       padding: 0px 0px 0px 10px;
+       /* border-top: solid #0000001a thick; */
+       /* justify-content: space-around; */
+   }
+
+   ul {
+       list-style: none;
+   }
+
+   .ads {
+       display: none;
+       /* width: 200px;
+        padding: 20px; */
+       /* position: static; */
+       /* display: flex; */
+   }
+   .showadss{
+       display: none;
+   }
+   .indexcontainer {
+       width: 100%;
+    border-top: solid #0000001a thick;
+
+   }
+
+   #indexanc:hover{
+       opacity: 0.6;
+   }
+
+   a {
+       text-decoration: none;
+       color: black;
+   }
+
+   #indexCont {
+       display: flex;
+       flex-direction: row;
+       margin-top: 30px;
+       /* padding: 10px 0px 0px 20px; */
+       border-top: solid #0000004d thin;
+       /* justify-content: space-around; */
+       width: 100%;
+       /* width: 60%; */
+       /* flex-wrap: wrap; */
+       /* background-color: black; */
+   }
+
+   .indexcontent {
+       display: flex;
+       width: 100%;
+       padding: 0px 0px;
+       /* align-content: flex-start;         */
+       /* justify-content: space-around; */
+       flex-wrap: wrap;
+   }
+
+   .indexcontent1 {
+       font-size: 16px;
+   }
+
+   #indexanc .indexcontent2 {
+       display: flex;
+       /* font-size: 15px;
+       color: #0009; */
+   }
+
+   #video {
+       background-size: cover;
+       width: 200px;
+       height: 150px;
+   }
+
+   #img {
+       background-size: cover;
+       width: 200px;
+       height: 150px;
+   }
+   /* ====================showmre============ */
+  #showContainer {
+      display: flex;
+      margin-top: 20px;
+      padding: 0px 0px 0px 0px;
+      /* position: relative; */
+  }
+
+  .showadspot {
+      display: none;
+  }
+
+  #showmain {
+      /* display:inline-flex; */
+      border-top: solid #0000001a thick;
+      width: 100%;
+      margin: 0px 0px 0px 0px;
+  }
+
+  #showvideo {
+      /* display: flex; */
+      background-size: cover;
+      width: 100%;
+      /* position: relative; */
+  }
+
+  #showimg {
+      /* display: flex; */
+      background-size: cover;
+      width: 100%;
+  }
+
+  #showaudio {
+      display: flex;
+      margin: 0px 0px 0px 0px;
+      /* width: 100%; */
+      font-size: 24px;
+  }
+
+  #longpost {
+      display: flex;
+      flex-direction: column;
+      margin: 0px 20px 0px 30px;
+      font-size: 19px;
+      color: rgba(0, 0, 0, 0.801);
+  }
+
+  #showaudio audio {
+      border-radius: 10px;
+      /* height:60px; */
+      width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+    #headercont {
+        display: flex;
+        justify-content: center;
+        background-color: #009688;
+        height: 40px;
+        /* padding-top: 10px; */
+        /* flex-wrap: wrap; */
+        padding-right: 20px;
+    }
+
+    .header {
+        margin-left: 5px;
+        padding-right: 10px;
+        padding-left: 10px;
+        text-decoration: none;
+        font-size: 15px;
+        color: white;
+        border-left: solid white thin;
+        /* border-left: 20px thin black; */
+        align-self: center;
+        flex-wrap: wrap;
+        line-height: 35px;
+    }
+    .showads{
+        display: none;
+    }
+    /* end of============== header style */
+
+    /*========== landing page======== */
+
+    #landingcont {
+        display: flex;
+        background-size: cover;
+        width: 100%;
+         height: 36rem;
+        
+    }
+
+    /* ======================================index page========================= */
+
+    #indexHead {
+        display: flex;
+        justify-content: space-around;
+        /* width: 60%; */
+        margin: 50px 20px 0px 20px;
+        border: solid #0000004d thin;
+        padding: 5px 20px 5px 20px;
+    }
+    
+    #mainIndexcont {
+        display: flex;
+        /* width: 100%; */
+        margin-top: 20px;
+        padding: 0px 0px 0px 10px;
+        /* border-top: solid #0000001a thick; */
+        /* justify-content: space-around; */
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .ads {
+        display: none;
+        /* width: 200px;
+        padding: 20px; */
+        /* position: static; */
+        /* display: flex; */
+    }
+
+    .indexcontainer {
+        width: 100%;
+    border-top: solid #0000001a thick;
+
+    }
+
+    #indexanc:hover {
+        opacity: 0.6;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+     #indexCont:hover{
+        opacity: 0.6;
+
+     }
+    #indexCont {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        /* padding: 10px 0px 0px 20px; */
+        border-top: solid #0000004d thin;
+        
+    }
+
+    .indexcontent {
+        display: flex;
+        width: 100%;
+        padding: 0px 0px;
+        /* align-content: flex-start;         */
+        /* justify-content: space-around; */
+        flex-wrap: wrap;
+    }
+
+    .indexcontent1 {
+        font-size: 14px;
+
+    }
+
+    #indexanc .indexcontent2 {
+        display:none;
+        font-size: 15px;
+        color: #0009;
+    }
+
+
+    #video {
+        background-size: cover;
+        width: 150px;
+        height: 120px;
+    }
+
+    #img {
+        background-size: cover;
+        width: 150px;
+        height: 120px;
+    }
+    /*========================= showmore page============= */
+    #showContainer {
+        display: flex;
+        margin-top: 20px;
+        padding: 0px 0px 0px 0px;
+        /* position: relative; */
+    }
+    .showadspot{
+        display:none;
+    }
+    #showmain {
+        /* display:inline-flex; */
+        border-top: solid #0000001a thick;
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+
+    #showvideo {
+        /* display: flex; */
+        background-size: cover;
+        width: 100%;
+        /* position: relative; */
+    }
+
+    #showimg {
+        /* display: flex; */
+        background-size: cover;
+        width: 100%;
+    }
+
+    #showaudio {
+        display: flex;
+        margin: 0px 0px 0px 0px;
+        /* width: 100%; */
+        font-size: 24px;
+    }
+
+    #longpost {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 20px 0px 30px;
+        font-size: 19px;
+        color: rgba(0, 0, 0, 0.801);
+    }
+
+    #showaudio audio {
+        border-radius: 10px;
+        /* height:60px; */
+        width: 100%;
+    }
+}

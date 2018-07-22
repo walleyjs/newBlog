@@ -1,0 +1,42 @@
+<% include ../partials/header.ejs %>
+    <div id="showContainer">
+     <div class="showadspot">
+       
+     </div>
+    <ul id="showmain">
+    <h1><%=talk.topic%></h1>
+    <%if((/\.(mp4|)$/i).test(talk.url)){%>
+    <video  id="showvideo" width="100%" controls>   
+    <source src="<%=talk.url%>" type="video/mp4">
+    </video>
+    <div>
+    <img src="<%=talk.image_url%>" alt="image" width="100%" >      
+    </div>
+    <%}else{%>
+    <img src="<%=talk.image_url%>" alt="image " id="showimg">
+    <div id="showaudio">
+        <audio controls>
+        <source src="<%=talk.url%>" type="audio/mp3">        
+     </audio>
+    </div>
+    <%}%> 
+    <div id="longpost">
+    <%=talk.post%><br/>
+    Date:<%=talk.date.toDateString()%>  
+    <form action="/talk/<%=talk._id%>?__method=DELETE" method="post" >  
+      <button>DELETE</button>
+    </form>
+    <form action="/talk/<%=talk._id%>/comment" method="post">
+        <input type="text" placeholder="author" name="comment[author]">
+        <input type="text" placeholder="text" name="comment[text]">
+        <button>submit</button>
+    </form>
+   <% talk.comments.forEach(function(user){%>  
+        <%=user.author%>
+        <%=user.text%>
+   <%})%>
+     </div>
+
+   </ul>
+</div>
+<% include ../partials/footer.ejs %>

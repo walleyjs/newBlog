@@ -1,0 +1,33 @@
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>first api</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+    <script src="/scripts.js"></script>
+</head>
+<body>
+<div>
+    <div id="headercont">
+    <a href="/landing" class="header header1">Home</a>
+    <a href="#" class="header header2">About</a>
+    <a href="/talk" class="header header3">speakers</a>
+    <a href="/testimony" class="header header3">testimony</a>
+    <a href="#" class="header header4">contacts</a>
+</div>
+<div id="formcontainer">
+    <div id="formcont">
+    <h1 class="formheader">upload files</h1>
+    <ul id="form">
+    <form ref='uploadForm' id='uploadForm' action="/talk" method="post" encType="multipart/form-data">
+        <li><input type="text" name="topic" placeholder="topic" class="input input1"  ></li>
+        <li><textarea name="post" id="" cols="15" rows="3" class="input input2" >content</textarea></li>
+
+        <li>upload image:<input type="file" name="url" value="upload picture" class="input input4"  /></li>
+        <li>upload video:<input type="file" name="image_url" value="upload video" class="input input4" ></li>
+        <li><button class="input input3">submit</button> </li>     
+    </form>
+    </ul>
+     </div>
+   </div>
+<% include ../partials/footer.ejs %>

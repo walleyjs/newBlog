@@ -1,0 +1,30 @@
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>first api</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+    <script src="/scripts.js"></script>
+</head>
+<body>
+<div>
+    <div id="headercont">
+    <a href="/landing" class="header header1">Home</a>
+    <a href="#" class="header header2">About</a>
+    <a href="/talk" class="header header3">speakers</a>
+    <a href="/testimony" class="header header3">testimony</a>
+    <a href="#" class="header header4">contacts</a>
+</div>
+<div id="formcontainer">
+    <div id="formcont">
+<h1 class="formheader">sign up</h1>
+<ul id="form">
+<form action="/register" method="post">
+    <li><input type="text" name="username" placeholder="username" class="input input1" > </li>
+     <li><input type="password" name="password" placeholder="password" class="input input2"></li>
+     <li><button class="input input3">sign up</button></li>
+   </form>
+   </ul>
+   </div>
+   </div>
+   <% include partials/footer.ejs%>
