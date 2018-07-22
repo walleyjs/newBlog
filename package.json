@@ -28,11 +28,11 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/walleyjs/blogSite.git"
+    "url": "git+https://github.com/walleyjs/cloudinaryApi.git"
   },
   "bugs": {
-    "url": "https://github.com/walleyjs/blogSite/issues"
+    "url": "https://github.com/walleyjs/cloudinaryApi/issues"
   },
-  "homepage": "https://github.com/walleyjs/blogSite#readme",
+  "homepage": "https://github.com/walleyjs/cloudinaryApi#readme",
   "description": ""
 }
