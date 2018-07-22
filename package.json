@@ -1,7 +1,6 @@
 {
   "name": "newapi",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "dependencies": {
     "@google-cloud/storage": "^1.6.0",
@@ -26,5 +25,14 @@
     "start": "node app.js"
   },
   "author": "walley",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walleyjs/blogSite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/walleyjs/blogSite/issues"
+  },
+  "homepage": "https://github.com/walleyjs/blogSite#readme",
+  "description": ""
 }
