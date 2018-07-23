@@ -26,6 +26,7 @@ router.post("/talk", fileParser, function (req, res) {
     var imgfilePath = req.files.image_url;
     //  const url;
     async function uploads() {
+       
         await cloudinary.uploader.upload(imgfilePath.path, function imageupload(result) {
             if (!req.files) {
                 res.status(400).send('No files were uploaded.');
@@ -50,8 +51,7 @@ router.post("/talk", fileParser, function (req, res) {
         }, {
             resource_type: "video"
         });
-
-    await function created() {
+          function created() {
             var allPosts = {
                 topic: topic,
                 post: post,
