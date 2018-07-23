@@ -6,9 +6,9 @@ var router = express.Router();
 var cloudinary = require("cloudinary");
 var fileParser = require('connect-multiparty')();
 var cloudinaryCredentials = {
-    cloud_name: 'walleyjs',
-    api_key: '599784654577436',
-    api_secret: 'ti3mIXk5iW_3g-r79Sm5eudmoy8'
+    cloud_name: 'cloudinaryCredentials.cloud_name',
+    api_key: 'cloudinaryCredentials.api_key',
+    api_secret: 'cloudinaryCredentials.api_secret'
 };
 cloudinary.config({
     cloud_name: cloudinaryCredentials.cloud_name,
