@@ -110,8 +110,7 @@ a {
     /* width: 100%; */
     width: 95%;
     /* flex-wrap: wrap; */
-    /* background-color: black; */
-    
+    /* background-color: black; */   
 }
 .indexcontent{
     display:flex;
@@ -129,7 +128,7 @@ a {
 }
 #indexanc .indexcontent2 {
     display:flex;
-    font-size: 15px;
+    font-size: 20px;
     color: #0009;
 }
 #video{
@@ -156,9 +155,7 @@ position: fixed;
 top:50px;
 width: 27%;
 border: solid #0000001a thin;
-    padding: 5px 5px 10px 5px;
-
-
+padding: 5px 5px 10px 5px;
 }
 
 #showmain{
@@ -203,6 +200,62 @@ border: solid #0000001a thin;
     width: 70%;
 
 }
+#commentform {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 10px 20px;
+}
+#comenttop {
+    color: #009688;
+}
+#commentbut{
+    padding: 7px 15px 7px 15px;
+    border-radius: 5px;
+    border: solid #9e9c9ce6 thin;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #009688;
+}
+.commentinput {
+    width: 100%;
+    /* text-align: center; */
+    font-size: 15px;
+    border-radius: 3px;
+    border: solid #9e9c9ce6 thin;
+    padding: 7px 0px 7px 10px;
+    margin: 3px;
+}
+#allcomment_fieldset {
+    padding: 5px 0px 05px 0px;
+    border-radius: 5px;
+    margin: 10px 0px 0px 0px;
+    background-color: white;
+    padding: 0px 10px 10px 10px;
+}
+#comment_fieldset {
+    display:flex;
+    flex-direction:row;
+    border-top: solid #575656e6 thin;
+    background-color: #e6e6e6;
+    font-size: 20px;
+}
+.userimg{
+    margin: 10px;
+    border: solid #7a7676e6 thin;
+    padding: 5px 5px 5px 5px;
+}
+#del {
+    display: flex;
+    margin-top: 3px;
+    margin-left: 3px;
+    border: solid #9e9e9e8a thin;
+    width: 50px;
+    padding: 5px 6px 6px 7px;
+    border-radius: 3px;
+    color: white;
+    background-color: #ec1a1a;
+    cursor: pointer;
+}
 /*======================== forms============== */
 .formheader {
     text-align: center;
@@ -229,7 +282,6 @@ border: solid #0000001a thin;
     border-color: #9e9e9e8a;
     border-radius: 5px;
 }
-
 .input3 {
     background-color:#099b79fc;
     color: white;
@@ -239,6 +291,22 @@ border: solid #0000001a thin;
 
 li a {
     color: #099b79fc;
+}
+/*///////////////////////======== testimonies//////////////// */
+#testimonyForm{
+    padding:10px;
+}
+#alltestimony_fieldset{
+    /* border-top: solid #7a7676e6 thin; */
+    padding: 40px 10px 15px 10px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 0px 20px 20px 20px;
+}
+#testimonyForm {
+    display: flex;
+    flex-direction: column;
+    /* padding: 0px 20px 10px 20px; */
 }
 /* =======================end of forms============= */
 /*============== media queries============== */

@@ -24,19 +24,32 @@
     <%=talk.post%><br/>
     Date:<%=talk.date.toDateString()%>  
     <form action="/talk/<%=talk._id%>?__method=DELETE" method="post" >  
-      <button>DELETE</button>
+      <button id="del">Delete</button>
     </form>
-    <form action="/talk/<%=talk._id%>/comment" method="post">
-        <input type="text" placeholder="author" name="comment[author]">
-        <input type="text" placeholder="text" name="comment[text]">
-        <button>submit</button>
-    </form>
+     <fieldset id="allcomment_fieldset">  
+      <h3 id="comenttop">COMMENTS:</h3>     
    <% talk.comments.forEach(function(user){%>  
-        <%=user.author%>
-        <%=user.text%>
+   <div id="comment_fieldset">
+        <div>
+        <img src="../img/user.svg" alt="landding img" width="50px" class="userimg">   
+        </div>
+        <div>
+        <h4 id="comenttop"><%=user.author%></h4>
+        <%=user.text%> 
+        </div>
+    </div>
    <%})%>
+   <form action="/talk/<%=talk._id%>/comment" method="post">
+     <ul id="commentform">
+      <h3 id="comenttop">ADD YOUR COMMENT:</h3>
+      <li> <input type="text" placeholder="author" name="comment[author]" class="commentinput commentinput1" ></li>
+      <li><textarea rows="" cols="" name="comment[text]" class="commentinput commentinput2" placeholder="Enter comment"></textarea></li>
+       <li ><button id="commentbut">comment</button></li> 
+     </ul>
+    </form>
+    
+    </fieldset>
      </div>
-
    </ul>
 </div>
 <% include ../partials/footer.ejs %>
